@@ -1,25 +1,28 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import ServicesSection from '@/components/ServicesSection';
+import AboutSection from '@/components/AboutSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Design Philosophy: Modern Industrial
+ * - Colors: Dark Blue (#1e3a8a) + Red-Orange (#ff6b35)
+ * - Typography: Cairo Bold (headings) + Poppins (body)
+ * - Layout: Dynamic and asymmetric with smooth transitions
+ * - Focus: Professional, modern, and industrial aesthetic
  */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
+      <main className="flex-grow pt-16">
+        <HeroSection />
+        <ServicesSection />
+        <AboutSection />
+        <ContactSection />
       </main>
+      <Footer />
     </div>
   );
 }
