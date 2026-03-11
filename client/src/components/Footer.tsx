@@ -41,6 +41,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#projects" className="text-blue-100 hover:text-white transition-colors">
+                  المشاريع
+                </a>
+              </li>
+              <li>
                 <a href="#about" className="text-blue-100 hover:text-white transition-colors">
                   عن الشركة
                 </a>

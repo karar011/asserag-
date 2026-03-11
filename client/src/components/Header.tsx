@@ -9,6 +9,7 @@ export default function Header() {
     { label: 'الرئيسية', href: '#home' },
     { label: 'الخدمات', href: '#services' },
     { label: 'المشاريع', href: '#projects' },
+    { label: 'الشهادات', href: '#testimonials' },
     { label: 'عن الشركة', href: '#about' },
     { label: 'التواصل', href: '#contact' },
   ];
